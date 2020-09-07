@@ -1,0 +1,28 @@
+tipo=1
+# Presentación del menú con los tipos de cafe
+
+# Decisión sobre el tipo de cafe
+while tipo!="3":
+  print("Bienvenido a CafeUV.\nSelecciona el tipo de cafe\n\t1- Americano\n\t2- Capuccino\n3- salir \n")
+  tipo = input ("Introduce el ingrediente extra correspondiente al tipo de cafe:")
+  if tipo == "1":
+      print("Selecciona \n\t 1- Crema chantilly \n\t2- Canela\n\t 3- Ninguno de los anteriores")
+      ingrediente = input("Introduce el ingrediente que deseas: ")
+      print("Cafe Americano ", end="")
+      if ingrediente == "1":
+          print ("Crema chantilly")
+      elif ingrediente == "2":
+        print ("Canela")    
+      else: 
+          print ("ninguno de los anteriores") 
+  if tipo == "2":
+      print("Ingredientes de Cafe Capucciono\n\t1- Leche Deslactosada\n\t2- Entera \n\t3- Light \n")
+      ingrediente = input("Introduce el ingrediente que deseas: ")
+      print("Cafe Americano ", end="")
+      if ingrediente == "1":
+          print("Leche Deslactosada")
+      elif ingrediente == "2":
+          print("Leche Entera")
+      else:
+          print("Leche Light")
+print("Gracias por su compra")
